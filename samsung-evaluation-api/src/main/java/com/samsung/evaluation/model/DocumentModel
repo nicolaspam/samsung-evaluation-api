@@ -1,0 +1,16 @@
+package com.samsung.evaluation.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@Setter
+
+public class DocumentModel {
+    private int documentId;
+    private String documentNumber;
+    private String notaFiscal;
+    private LocalDate documentDate;
+    private double documentValue;
+    private String currencyCode;
+}

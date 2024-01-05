@@ -1,0 +1,38 @@
+package com.samsung.evaluation.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.format.annotation.DateTimeFormat;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.stream.Collectors;
+
+@RestController
+@RequestMapping("/api/documents")
+public class DocumentController {
+
+    private final DocumentService documentService;
+    private final CurrencyConversionService currencyConversionService;
+
+    public DocumentController(DocumentService documentService, CurrencyConversionService currencyConversionService) {
+        this.documentService = documentService;
+        this.currencyConversionService = currencyConversionService;
+    }
+
+    @GetMapping
+    public ResponseEntity<List<DocumentDTO>> getDocuments(
+            @RequestParam(required = false) String documentNumber,
+            @RequestParam(required = false) String currencyCode,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate documentDate) {
+        
+        DocumentFilterDTO filters = new DocumentFilterDTO(documentNumber, currencyCode, documentDate);
+        List<DocumentDTO> documents = documentService.getFilteredDocuments(filters);
+
+        documents = currencyConversionService.convertDocumentCurrencies(documents);
+
+        return ResponseEntity.ok(documents);
+    }
+}

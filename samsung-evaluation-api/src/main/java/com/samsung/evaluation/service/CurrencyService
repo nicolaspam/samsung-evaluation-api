@@ -1,0 +1,43 @@
+package com.samsung.evaluation.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.samsung.evaluation.DTO.CurrencyDTO;
+import com.samsung.evaluation.model.CurrencyModel;
+
+@Service
+public class CurrencyService {
+    
+    private String endpoint = "https://sdshealthcheck.cellologistics.com.br/sds-devs-evaluation/evaluation/currency";
+
+    public List<CurrencyModel> listAll() {
+        RestTemplate template = new RestTemplate();
+        ResponseEntity<String> response = template.getForEntity(endpoint, String.class);
+        String responseBodyString = response.getBody();
+        
+        try {
+            return CurrencyDTO.dataToModel(responseBodyString);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
+    }
+
+    public CurrencyModel getCurrencyByCode(String currencyCode) {
+        RestTemplate template = new RestTemplate();
+        ResponseEntity<String> response = template.getForEntity(endpoint, String.class);
+        String responseBodyString = response.getBody();
+        
+        try {
+            return CurrencyDTO.dataToModelByCode(responseBodyString, currencyCode);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+}
