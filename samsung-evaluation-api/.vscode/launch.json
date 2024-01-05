@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SamsungEvaluationApiApplication<samsung-evaluation-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.samsung.evaluation.SamsungEvaluationApiApplication",
+            "projectName": "samsung-evaluation-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

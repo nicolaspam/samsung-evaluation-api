@@ -1,1 +1,17 @@
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\DTO\DocumentDTO.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\DTO\QuotationDTO.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\model\QuotationModel.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\model\ConvertedCurrencyModel.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\model\CurrencyModel.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\model\DocumentModel.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\service\CurrencyConversionService.java
 C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\SamsungEvaluationApiApplication.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\service\DocumentService.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\controller\DataController.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\service\QuotationService.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\config\RestTemplateConfig.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\controller\TestController.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\DTO\DocumentFilterDTO.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\DTO\ConvertedDocumentDTO.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\DTO\CurrencyDTO.java
+C:\Users\Nicolas\Documents\samsung-evaluation-api\samsung-evaluation-api\src\main\java\com\samsung\evaluation\service\CurrencyService.java
